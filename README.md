@@ -6,8 +6,8 @@ Stupidly easy mailing with Amazon AWS SES (Simple Email Service)
 Install the module with: `npm install ultrases`
 
 ```javascript
-var ultrases = require('ultrases');
-ultrases.awesome(); // "awesome"
+var UltraSES = require('ultrases');
+var mailer = new UltraSES({...}); // "awesome"
 ```
 
 ## Documentation
