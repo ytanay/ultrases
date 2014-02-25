@@ -1,4 +1,4 @@
-# ultrases [![Build Status](https://secure.travis-ci.org//ultrases.png?branch=master)](http://travis-ci.org//ultrases)
+# ultrases [![Build Status](https://secure.travis-ci.org/ytanay/ultrases.png?branch=master)](http://travis-ci.org/ytanay/ultrases)
 
 Stupidly easy mailing with Amazon AWS SES (Simple Email Service)
 
