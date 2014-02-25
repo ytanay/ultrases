@@ -1,0 +1,41 @@
+{
+  "name": "ultrases",
+  "version": "0.0.0",
+  "main": "lib/ultrases.js",
+  "description": "Stupidly easy mailing with Amazon AWS SES (Simple Email Service)",
+  "homepage": "http://dev.paticon.com/module/ultrases",
+  "bugs": "https://github.com//ultrases/issues",
+  "author": {
+    "name": "Yotam Tanay",
+    "email": "yotam@paticon.com",
+    "url": "http://people.paticon.com/yotam"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ytanay/ultrases"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "files": [  ],
+  "keywords":[
+  ],
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.7.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.0",
+    "load-grunt-tasks": "~0.2.0",
+    "time-grunt": "~0.2.0",
+    "jshint-stylish": "~0.1.3"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "dependencies": {
+    "aws-sdk": "*",
+    "jade": "*",
+    "html-to-text": "*"
+  }
+}
