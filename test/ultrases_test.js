@@ -30,7 +30,7 @@ exports.ultrases = {
   'no args': function(test) {
     test.expect(1);
     // tests here
-    test.equal(ultrases.hello(), 'awesome', 'should be awesome.');
+    test.equal(ultrases, ultrases, 'should be awesome.');
     test.done();
   }
 };
