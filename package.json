@@ -1,6 +1,6 @@
 {
   "name": "ultrases",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/ultrases.js",
   "description": "Dead simple email dispatch with AWS SES (Amazon Simple Email Service)",
   "homepage": "http://dev.paticon.com/module/ultrases",
@@ -19,7 +19,11 @@
       "type": "MIT"
     }
   ],
-  "keywords": ["ses", "aws", "email"],
+  "keywords": [
+    "ses",
+    "aws",
+    "email"
+  ],
   "devDependencies": {
     "grunt-contrib-jshint": "~0.7.0",
     "grunt-contrib-nodeunit": "~0.2.0",
