@@ -1,4 +1,4 @@
-# ultrases [![Build Status](https://secure.travis-ci.org/ytanay/ultrases.png?branch=master)](http://travis-ci.org/ytanay/ultrases)
+# ultrases [![Build Status](https://secure.travis-ci.org/ytanay/ultrases.png?branch=master)](http://travis-ci.org/ytanay/ultrases) [![NPM version](https://badge.fury.io/js/ultrases.png)](http://badge.fury.io/js/ultrases)
 
 Dead simple email dispatch with AWS SES (Amazon Simple Email Service) with templates!
 
