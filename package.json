@@ -1,6 +1,6 @@
 {
   "name": "ultrases",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/ultrases.js",
   "description": "Dead simple email dispatch with AWS SES (Amazon Simple Email Service)",
   "homepage": "http://dev.paticon.com/module/ultrases",
