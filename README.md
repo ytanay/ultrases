@@ -13,14 +13,14 @@ var mailer = new UltraSES({...});
 ## Why?
 > We already have an SDK for Node, why do we need yet another module?
 
-Because the offical AWS SDK for Node.js is cumbersome and over-complicated for simple tasks. That's exactly the sort of things we have high level abstractions for. Besides, they uppercase the first letter of their properties.
+Because the official AWS SDK for Node.js is cumbersome and over-complicated for simple tasks. That's exactly the sort of things we have high level abstractions for. Besides, they uppercase the first letter of their properties.
 ```javascript
   var params = {WhoEvenDoesThat: 'nobody'}
 ```
 
 ## Documentation
 
-### Quick Refrence:
+### Quick Reference:
 - [Setup](#what-is-cargomaster)
 - [Sending a Simple Email](#sending-a-simple-email)
 - [Sending Raw HTML](#sending-raw-html)
@@ -37,6 +37,17 @@ var mailer = new UltraSES({
   }
 }
 ```
+Alternatively, you may pass a "pre-initialized" AWS SDK object like so:
+```javascript
+var aws = require('aws-sdk');
+AWS.config.update({...});
+var mailer = new UltraSES({sdk: aws});
+```
+You can even pass in an initialized SES client object:
+```javascript
+var ses = new aws.SES();
+var mailer = new UltraSES({client: ses});
+```
 
 You can also supply defaults for sending emails (for example, the "source" address)
 ```javascript
@@ -47,7 +58,7 @@ var mailer = new UltraSES({
 ```
 You can always override these defaults when you send the actual emails, of course.
 
-Keep in mind that the paramaters you give to various methods adhere to the principles in the AWS SDK for Node. You can pass an array instead of a string for multiple recipients, specify a `ReplyTo` and `ReturnPath` address, specify character encodings, and so on.
+Keep in mind that the parameters you give to various methods adhere to the principles in the AWS SDK for Node. You can pass an array instead of a string for multiple recipients, specify a `ReplyTo` and `ReturnPath` address, specify character encodings, and so on.
 
 ### Sending a Simple Email
 The basic method for sending email is ```mailer.sendText(email, text, done)``` and it takes (as you can probably see), 3 arguments:
@@ -72,7 +83,7 @@ mailer.sendHTML(email, '<h1>Why hello there</h1>', function(err){
   console.log('html email sent!');
 });
 ```
-+ In this example, we overrode the "from" address that we set during intialization.
++ In this example, we overrode the "from" address that we set during initialization.
 
 ### Sending a Pretty Jade Template
 [Jade](http://jade-lang.com/) is one of the most popular templating engines for Node. UltraSES comes with out of the box support for compiling Jade templates with your "locals" and sending them.
@@ -81,7 +92,7 @@ var email = { to: 'htmlcat@hexaland.com', subject: 'Now that\'s a pretty email' 
 var template = { file: './path/to/template.jade', locals: { some: 'local', variables: 'here' } };
 mailer.sendTemplate(email, template, function(err){
   if(err) throw err;
-  console.log('templated email sent');
+  console.log('compiled template email sent');
 })
 ```
 + If you already have compiled template file, just pass it to ```mailer.sendHTML```.
