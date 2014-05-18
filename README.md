@@ -107,9 +107,6 @@ UltraSES exposes it's internal SES client as provided by the AWS SDK under the p
 mailer.ses.setIdentityFeedbackForwardingEnabled({ForwardingEnabled: true, Identity: 'WhatIsUpWithThese@UpperCaseLetters.com'}, function(err, data){}), 
 ```
 
-## Examples
-_(There are examples in the documentation section, but I'll add some more soon)_
-
 ## Contributing
 Honestly, this module doesn't have much room to grow. It does what it does and aside for bugs (and maybe customizable template engine support?) there isn't much to expand. If you have some cool ideas though, go ahead and do a pull request, or create an issue with your idea! 
 
