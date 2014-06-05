@@ -11,12 +11,13 @@ var mailer = new UltraSES({...});
 ```
 
 ## Why?
-> We already have an SDK for Node, why do we need yet another module?
+> "We already have the AWS SDK for Node, why do we need another module?"
 
-Because the official AWS SDK for Node.js is cumbersome and over-complicated for simple tasks. That's exactly the sort of things we have high level abstractions for. Besides, they uppercase the first letter of their properties.
+Because the official AWS SDK for Node.js is cumbersome and stuffy. Not to mention those 4 level deep configuration objects. Besides, it prompotes uppercasing the first letter of properties!
 ```javascript
-  var params = {WhoEvenDoesThat: 'nobody'}
+  var params = {WhoEvenDoesThat: 'nobody... except amazon'}
 ```
+UltraSES is a high level "abstraction" - no overkill. 
 
 ## Documentation
 
@@ -24,7 +25,7 @@ Because the official AWS SDK for Node.js is cumbersome and over-complicated for 
 - [Setup](#setup)
 - [Sending a Simple Email](#sending-a-simple-email)
 - [Sending Raw HTML](#sending-raw-html)
-- [Sending a Pretty Jade Template](#sending-a-pretty-jade-template)
+- [Sending a Jade Template](#sending-a-jade-template)
 - [One Last Thing](#one-last-thing)
 
 ### Setup
@@ -85,7 +86,7 @@ mailer.sendHTML(email, '<h1>Why hello there</h1>', function(err){
 ```
 + In this example, we overrode the "from" address that we set during initialization.
 
-### Sending a Pretty Jade Template
+### Sending a Jade Template
 [Jade](http://jade-lang.com/) is one of the most popular templating engines for Node. UltraSES comes with out of the box support for compiling Jade templates with your "locals" and sending them.
 ```javascript
 var email = { to: 'htmlcat@hexaland.com', subject: 'Now that\'s a pretty email' };
@@ -112,7 +113,7 @@ Honestly, this module doesn't have much room to grow. It does what it does and a
 
 It's just email, after all. This is '90s technology we're dealing with.
 
-I'll also leave this here: it's impossible to write unit tests for a module that sends email. Fact.
+Here is something else I've realized - it's practically impossible to write unit tests for a module that sends email.
 
 ## Release History
 The latest version is always on [npm](https://www.npmjs.org/package/ultrases). You can see the tagged versions [here](https://github.com/ytanay/ultrases/releases) or view the commits [here](https://github.com/ytanay/ultrases/commits/master).
