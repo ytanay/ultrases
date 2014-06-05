@@ -21,7 +21,7 @@ Because the official AWS SDK for Node.js is cumbersome and over-complicated for 
 ## Documentation
 
 ### Quick Reference:
-- [Setup](#what-is-cargomaster)
+- [Setup](#setup)
 - [Sending a Simple Email](#sending-a-simple-email)
 - [Sending Raw HTML](#sending-raw-html)
 - [Sending a Pretty Jade Template](#sending-a-pretty-jade-template)
