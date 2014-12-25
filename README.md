@@ -116,8 +116,7 @@ It's just email, after all. This is '90s technology we're dealing with.
 Here is something else I've realized - it's practically impossible to write unit tests for a module that sends email.
 
 ## See Also
-
- * [node-ses](https://www.npmjs.com/package/node-ses) is similar, but does not require the aws-sdk as a dependency, and does not directly support templates.
+ * [node-ses](https://www.npmjs.com/package/node-ses) is a similar module, but does not depend on `aws-sdk`. However, it does not come with built in support for templating.
 
 ## Release History
 The latest version is always on [npm](https://www.npmjs.org/package/ultrases). You can see the tagged versions [here](https://github.com/ytanay/ultrases/releases) or view the commits [here](https://github.com/ytanay/ultrases/commits/master).
