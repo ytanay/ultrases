@@ -13,7 +13,7 @@ var mailer = new UltraSES({...});
 ## Why?
 > "We already have the AWS SDK for Node, why do we need another module?"
 
-Because the official AWS SDK for Node.js is cumbersome and stuffy. Not to mention those 4 level deep configuration objects. Besides, it prompotes uppercasing the first letter of properties!
+Because the official AWS SDK for Node.js is cumbersome and stuffy. Not to mention those 4 level deep configuration objects. Besides, it promotes uppercasing the first letter of properties!
 ```javascript
   var params = {WhoEvenDoesThat: 'nobody... except amazon'}
 ```
