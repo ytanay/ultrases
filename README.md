@@ -1,8 +1,7 @@
 # ultrases [![NPM version](https://badge.fury.io/js/ultrases.png)](http://badge.fury.io/js/ultrases)
 
 Dead simple email dispatch with AWS SES (Amazon Simple Email Service) with templates!
-
-**Deprecated - Use [node-mailer](http://nodemailer.com/) et al.**
+### Deprecated - Use [node-mailer](http://nodemailer.com/) et al.
 
 ## Getting Started
 Install the module via [npm](https://www.npmjs.org/package/ultrases) with: `npm install ultrases`
